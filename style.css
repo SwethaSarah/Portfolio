@@ -280,10 +280,6 @@ transition: background-size .2s;
     .insta{
         margin-left: 20%;
     } 
-    .About{
-        flex-direction: column;   
-        margin-top: 3%; 
-    }
 }
 @media screen and (max-width:520px){
     .skills-content{
@@ -295,10 +291,6 @@ transition: background-size .2s;
     }
     .skills-content p{
         padding: 0px;
-    }
-    .About{
-        flex-direction: column;   
-        margin-top: 3%; 
     }
     .insta, .mail{
         margin-left: 10%;
@@ -313,27 +305,6 @@ transition: background-size .2s;
         }
 }
 @media screen and (max-width: 430px){
-    .skills-content{
-        display: flex;
-        flex-direction: column;
-        width: 60%;
-        height: 50%;
-        margin-left: 20%;
-    }
-    .About{
-        flex-direction: column;   
-        margin-top: 3%; 
-    }
-    .skills-content p{
-        padding: 0px;
-    }
-    .bar, .rbar{
-        opacity: 0;
-    }
-    .about-text p{
-        margin-left: 5%;
-        margin-right: 10%;
-    }
     .mail , .insta{
         display: flex;
         align-items: center;
@@ -342,8 +313,9 @@ transition: background-size .2s;
         margin-top: 5%;
         padding: 30px;
     }
-    .Contact{
-        margin: 10%;
+    .About{
+        flex-direction: column;   
+        margin-top: 3%; 
     }
 }
 .disappear{
