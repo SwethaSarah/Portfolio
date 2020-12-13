@@ -175,11 +175,8 @@ text-align: center;
     z-index: 1;
 }
 .html, .css, .js, .adobexd, .adobeillustrator, .python {
-    border-style: ridge;
-    cursor: pointer;
-    text-decoration: none;
- list-style-type: none;
- font-family: 'Dancing Script', cursive;
+ border-style: ridge;
+ cursor: pointer;
  padding: 4%;
  background:
  linear-gradient(
@@ -189,23 +186,14 @@ text-align: center;
 background-size: 0px 100%;
 transition: background-size .2s;
 }
-.html:hover{
-    background-size: 80% 100%;
-}
-.css:hover{
+.css:hover, .html:hover{
     background-size: 90% 100%;
 }
-.js:hover{
+.js:hover,  .python:hover{
     background-size: 70% 100%;
 }
-.adobexd:hover{
+.adobexd:hover , .adobeillustrator:hover{
     background-size: 80% 100%;
-}
-.adobeillustrator:hover{
-    background-size: 80% 100%;
-}
-.python:hover{
-    background-size: 90% 100%;
 }
 .skills-content p{
     padding: 2rem;
@@ -229,6 +217,7 @@ transition: background-size .2s;
     position: relative;
     justify-content: space-around;
     width: 70vh;
+    height: 20vh;
     margin-top: 3%;
     padding: 30px;
     border-radius: 1em;
@@ -250,11 +239,7 @@ transition: background-size .2s;
 .mail{
     margin-left: 10%;
 }
-@media screen and (max-width:1000px){
-    .insta{
-        margin-left: 45%;
-    }
-}
+
 @media screen and (max-width:860px){
     .skills-content p{
         padding: .5em;
@@ -284,7 +269,8 @@ transition: background-size .2s;
         display: block;
     }
     .About{
-        flex-direction: column;    
+        flex-direction: column;   
+        margin-top: 3%; 
     }
     .insta{
         margin-left: 30%;
@@ -294,6 +280,10 @@ transition: background-size .2s;
     .insta{
         margin-left: 20%;
     } 
+    .About{
+        flex-direction: column;   
+        margin-top: 3%; 
+    }
 }
 @media screen and (max-width:520px){
     .skills-content{
@@ -305,6 +295,10 @@ transition: background-size .2s;
     }
     .skills-content p{
         padding: 0px;
+    }
+    .About{
+        flex-direction: column;   
+        margin-top: 3%; 
     }
     .insta, .mail{
         margin-left: 10%;
@@ -319,6 +313,27 @@ transition: background-size .2s;
         }
 }
 @media screen and (max-width: 430px){
+    .skills-content{
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        height: 50%;
+        margin-left: 20%;
+    }
+    .About{
+        flex-direction: column;   
+        margin-top: 3%; 
+    }
+    .skills-content p{
+        padding: 0px;
+    }
+    .bar, .rbar{
+        opacity: 0;
+    }
+    .about-text p{
+        margin-left: 5%;
+        margin-right: 10%;
+    }
     .mail , .insta{
         display: flex;
         align-items: center;
@@ -327,21 +342,28 @@ transition: background-size .2s;
         margin-top: 5%;
         padding: 30px;
     }
+    .Contact{
+        margin: 10%;
+    }
 }
-.animate{
+.disappear{
     opacity: 0;
 }
-.active, .h-active, .m-active, .i-active{
+.active{
     transform: translate(0%);
-}
-.active, .h-active{
     transition: transform 0.5s ease-in;
 }
-.m-active{
-    transition: transform 0.7s ease-in;
+.animate .hire{
+    transition: transform 0.5s ease-in;
+    transform: translate(0%);
 }
-.i-active{
+.animate .mail{
+    transition: transform 0.7s ease-in;
+    transform: translate(0%);
+}
+.animate .insta{
     transition: transform 0.9s ease-in;
+    transform: translate(0%);
 }
 .animateBar .line1{
   transform: rotate(-45deg) translate(-4px,4px);
